@@ -37,7 +37,7 @@
                 <&kp SPACE>,
                 <&p_sp>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
