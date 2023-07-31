@@ -131,12 +131,75 @@
             key-positions = <7 33>;
             layers = <0>;
         };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <7 8 21>;
+            layers = <0>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 20 9>;
+            layers = <0>;
+        };
+
+        dollar_sign {
+            bindings = <&kp DOLLAR>;
+            key-positions = <31 32 9>;
+            layers = <0>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <7 20 21>;
+            layers = <0>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <30 31 32>;
+            layers = <0>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <18 20>;
+            layers = <0>;
+        };
+
+        hashtag {
+            bindings = <&kp POUND>;
+            key-positions = <6 7 8>;
+        };
     };
 
     macros {
     };
 
     behaviors {
+        reset_left: reset_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RESET_LEFT";
+            bindings =
+                <&bootloader>,
+                <&sys_reset>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1000>;
+            hold-trigger-key-positions = <1 14 27 16 5>;
+        };
+        reset_right: reset_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RESET_RIGHT";
+            bindings =
+                <&bootloader>,
+                <&sys_reset>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1000>;
+            hold-trigger-key-positions = <6 19 32 21 10>;
+        };
     };
 
     keymap {
