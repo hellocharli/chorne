@@ -81,16 +81,55 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <6 7>;
+            layers = <0>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <18 19 20>;
+            layers = <0>;
+        };
+
+        forward_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <31 20 9>;
+            layers = <0>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <7 20 33>;
+            layers = <0>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <19 8 21>;
+            layers = <0>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <19 10>;
+            layers = <0>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <6 19>;
+            layers = <0>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <7 33>;
+            layers = <0>;
         };
     };
 
@@ -159,10 +198,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET               &kp AMPS  &kp KP_MULTIPLY    &trans    &trans  &trans
-&trans    &trans  &trans    &trans    &trans     &trans    &kp GRAVE   &kp LEFT_PARENTHESIS         &kp LBKT  &kp RBKT  &kp BSLH  &trans
-&trans    &trans  &trans    &trans    &trans     &trans    &kp TILDE  &kp RIGHT_PARENTHESIS         &kp LBRC  &kp RBRC  &kp PIPE  &trans
-                            &trans    &trans     &trans       &trans                 &trans           &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET              &kp AMPS        &kp KP_MULTIPLY      &kp LESS_THAN  &kp GREATER_THAN  &trans
+&trans    &trans  &trans    &trans    &trans     &trans    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp LEFT_BRACKET            &trans  &trans
+&trans    &trans  &trans    &trans    &trans     &trans    &kp TILDE        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp RIGHT_BRACKET          &kp PIPE  &trans
+                            &trans    &trans     &trans       &trans                &trans                 &trans
             >;
         };
 
