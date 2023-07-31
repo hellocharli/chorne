@@ -23,6 +23,18 @@
             key-positions = <0 1>;
             layers = <0 1>;
         };
+
+        num {
+            bindings = <&mo 4>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+
+        f_keys {
+            bindings = <&mo 5>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -102,6 +114,24 @@
 &trans    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
 &trans    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE     &trans
                             &trans    &trans     &trans       &trans     &trans           &trans
+            >;
+        };
+
+        numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+                        &trans  &trans  &trans    &trans  &kp KP_NUMBER_0           &trans
+            >;
+        };
+
+        f_keys {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1   &kp F2   &kp F3   &kp F4  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F5   &kp F6   &kp F7   &kp F8  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                        &trans  &trans  &trans    &trans  &trans   &trans
             >;
         };
     };
