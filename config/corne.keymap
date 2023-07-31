@@ -13,21 +13,21 @@
         compatible = "zmk,combos";
 
         layout_swap {
-            bindings = <&tog 2>;
+            bindings = <&tog 4>;
             key-positions = <37 40>;
-            layers = <0 2 1>;
+            layers = <0 1 2>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            layers = <0 2 1>;
+            layers = <0 1 2>;
         };
 
         number_layer {
             bindings = <&mo 5>;
             key-positions = <15 16>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         function_layer {
@@ -39,138 +39,151 @@
         period {
             bindings = <&kp PERIOD>;
             key-positions = <21 22>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         comma {
             bindings = <&kp COMMA>;
             key-positions = <20 21>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <19 21 22>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <19 20 21>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         apostrophe {
             bindings = <&kp APOSTROPHE>;
             key-positions = <8 21>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <7 21>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <30 31>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <18 19>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <6 7>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <18 19 20>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         forward_slash {
             bindings = <&kp SLASH>;
             key-positions = <31 20 9>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <7 20 33>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         caret {
             bindings = <&kp CARET>;
             key-positions = <19 8 21>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <19 10>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <6 19>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <7 33>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <7 8 21>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <19 20 9>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         dollar_sign {
             bindings = <&kp DOLLAR>;
             key-positions = <31 32 9>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         at {
             bindings = <&kp AT>;
             key-positions = <7 20 21>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <30 31 32>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <18 20>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         hashtag {
             bindings = <&kp POUND>;
             key-positions = <6 7 8>;
+            layers = <0 1 2>;
+        };
+
+        mac_layer {
+            bindings = <&to 2>;
+            key-positions = <13 27 31>;
+            layers = <0 1>;
+        };
+
+        win_layer {
+            bindings = <&to 0>;
+            key-positions = <2 8 30>;
+            layers = <1 2>;
         };
     };
 
@@ -178,28 +191,6 @@
     };
 
     behaviors {
-        reset_left: reset_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RESET_LEFT";
-            bindings =
-                <&bootloader>,
-                <&sys_reset>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <1000>;
-            hold-trigger-key-positions = <1 14 27 16 5>;
-        };
-        reset_right: reset_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RESET_RIGHT";
-            bindings =
-                <&bootloader>,
-                <&sys_reset>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <1000>;
-            hold-trigger-key-positions = <6 19 32 21 10>;
-        };
     };
 
     keymap {
@@ -220,21 +211,21 @@
             >;
         };
 
-        mac {
-            bindings = <
-          &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-          &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_COMMAND  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans  &trans  &trans    &trans  &trans   &none
-            >;
-        };
-
         colemack_dh {
             bindings = <
 &trans  &kp Q  &kp W   &kp F   &kp P   &kp B     &kp J   &kp L      &kp U    &kp Y  &kp SEMI   &trans
 &trans  &kp A  &kp R   &kp S   &kp T   &kp G     &kp M   &kp N      &kp E    &kp I     &kp O  &kp SQT
 &trans  &kp Z  &kp X   &kp C   &kp D   &kp V     &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH   &trans
                       &trans  &trans  &trans    &trans  &trans     &trans
+            >;
+        };
+
+        mac {
+            bindings = <
+          &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans  &trans  &trans  &trans
+&kp LEFT_COMMAND  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans  &trans  &trans  &trans
+                                  &trans  &trans  &trans    &trans  &trans  &kp RIGHT_CONTROL
             >;
         };
 
