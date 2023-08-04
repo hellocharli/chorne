@@ -26,7 +26,7 @@
 
         function_layer {
             bindings = <&mo 6>;
-            key-positions = <1 2>;
+            key-positions = <4 5>;
             layers = <0 1 2>;
         };
 
