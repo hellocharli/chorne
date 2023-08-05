@@ -158,7 +158,7 @@
 
         ampersand {
             bindings = <&kp AMPERSAND>;
-            key-positions = <18 20>;
+            key-positions = <19 21>;
             layers = <0 1 2>;
         };
 
@@ -185,6 +185,17 @@
     };
 
     behaviors {
+        left_reset: left_reset {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_RESET";
+            bindings =
+                <&bootloader>,
+                <&sys_reset>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <1 14 27 16 5>;
+        };
     };
 
     keymap {
