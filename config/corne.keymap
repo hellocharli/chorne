@@ -179,6 +179,16 @@
             key-positions = <2 8 30>;
             layers = <1 2>;
         };
+
+        left_reset {
+            bindings = <&rst>;
+            key-positions = <1 14 27 16 5>;
+        };
+
+        right_reset {
+            bindings = <&rst>;
+            key-positions = <6 19 32 21 10>;
+        };
     };
 
     macros {
