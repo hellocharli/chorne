@@ -181,7 +181,7 @@
         };
 
         left_reset {
-            bindings = <&rst B A>;
+            bindings = <&rst>;
             key-positions = <1 14 27 16 5>;
         };
     };
