@@ -181,7 +181,7 @@
         };
 
         left_reset {
-            bindings = <&left_reset>;
+            bindings = <&reset_behavior>;
             key-positions = <1 14 27 16 5>;
         };
     };
@@ -190,9 +190,9 @@
     };
 
     behaviors {
-        left_reset: left_reset {
+        reset_behavior: reset_behavior {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_RESET";
+            label = "RESET_BEHAVIOR";
             bindings =
                 <&bootloader>,
                 <&sys_reset>;
