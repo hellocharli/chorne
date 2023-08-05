@@ -33,139 +33,116 @@
         period {
             bindings = <&kp PERIOD>;
             key-positions = <21 22>;
-            layers = <0 1 2>;
         };
 
         comma {
             bindings = <&kp COMMA>;
             key-positions = <20 21>;
-            layers = <0 1 2>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <19 21 22>;
-            layers = <0 1 2>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <19 20 21>;
-            layers = <0 1 2>;
         };
 
         apostrophe {
             bindings = <&kp APOSTROPHE>;
             key-positions = <8 21>;
-            layers = <0 1 2>;
         };
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <7 21>;
-            layers = <0 1 2>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <30 31>;
-            layers = <0 1 2>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <18 19>;
-            layers = <0 1 2>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <6 7>;
-            layers = <0 1 2>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <18 19 20>;
-            layers = <0 1 2>;
         };
 
         forward_slash {
             bindings = <&kp SLASH>;
             key-positions = <31 20 9>;
-            layers = <0 1 2>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <7 20 33>;
-            layers = <0 1 2>;
         };
 
         caret {
             bindings = <&kp CARET>;
             key-positions = <19 8 21>;
-            layers = <0 1 2>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <19 10>;
-            layers = <0 1 2>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <6 19>;
-            layers = <0 1 2>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <7 33>;
-            layers = <0 1 2>;
         };
 
         exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <7 8 21>;
-            layers = <0 1 2>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <19 20 9>;
-            layers = <0 1 2>;
         };
 
         dollar_sign {
             bindings = <&kp DOLLAR>;
             key-positions = <31 32 9>;
-            layers = <0 1 2>;
         };
 
         at {
             bindings = <&kp AT>;
             key-positions = <7 20 21>;
-            layers = <0 1 2>;
         };
 
         asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <30 31 32>;
-            layers = <0 1 2>;
         };
 
         ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <19 21>;
-            layers = <0 1 2>;
         };
 
         hashtag {
             bindings = <&kp POUND>;
             key-positions = <6 7 8>;
-            layers = <0 1 2>;
         };
 
         mac_layer {
@@ -181,12 +158,12 @@
         };
 
         left_reset {
-            bindings = <&rst B A>;
+            bindings = <&rst 0 0>;
             key-positions = <1 14 27 16 5>;
         };
 
         right_reset {
-            bindings = <&rst>;
+            bindings = <&rst 0 0>;
             key-positions = <6 19 32 21 10>;
         };
     };
