@@ -202,7 +202,9 @@
             tapping_term_ms = <135>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
     };
 
@@ -218,7 +220,7 @@
 
             bindings = <
          &kp TAB  &kp Q  &kp W         &kp E  &kp R      &kp T      &kp Y  &kp U          &kp I     &kp O      &kp P  &kp BSPC
-  &kp LEFT_SHIFT  &kp A  &kp S         &kp D  &kp F      &kp G      &kp H  &kp J          &kp K    &kp UP      &kp L    &trans
+  &kp LEFT_SHIFT  &kp A  &kp S         &kp D  &kp F      &kp G      &kp H  &kp J          &kp K    &kp UP      &kp L   &as C A
 &kp LEFT_CONTROL  &kp Z  &kp X         &kp C  &kp V      &kp B      &kp N  &kp M       &kp LEFT  &kp DOWN  &kp RIGHT    &trans
                                 &kp LEFT_ALT  &mo 3  &kp SPACE    &kp RET  &mo 4  &kp RIGHT_GUI
             >;
