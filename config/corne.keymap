@@ -179,6 +179,11 @@
             key-positions = <2 8 30>;
             layers = <1 2>;
         };
+
+        reset {
+            bindings = <&rst B A>;
+            key-positions = <1 14 27 16 5 6 19 32 21 10>;
+        };
     };
 
     macros {
@@ -189,22 +194,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "RST";
             bindings =
-                <&bootloader>,
-                <&sys_reset>;
+                <&kp>,
+                <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AUTO_SHIFT";
-            #binding-cells = <2>;
-            tapping_term_ms = <135>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
         };
     };
 
@@ -220,7 +214,7 @@
 
             bindings = <
          &kp TAB  &kp Q  &kp W         &kp E  &kp R      &kp T      &kp Y  &kp U          &kp I     &kp O      &kp P  &kp BSPC
-  &kp LEFT_SHIFT  &kp A  &kp S         &kp D  &kp F      &kp G      &kp H  &kp J          &kp K    &kp UP      &kp L   &as C A
+  &kp LEFT_SHIFT  &kp A  &kp S         &kp D  &kp F      &kp G      &kp H  &kp J          &kp K    &kp UP      &kp L    &trans
 &kp LEFT_CONTROL  &kp Z  &kp X         &kp C  &kp V      &kp B      &kp N  &kp M       &kp LEFT  &kp DOWN  &kp RIGHT    &trans
                                 &kp LEFT_ALT  &mo 3  &kp SPACE    &kp RET  &mo 4  &kp RIGHT_GUI
             >;
