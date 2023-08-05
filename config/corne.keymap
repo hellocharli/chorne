@@ -180,9 +180,9 @@
             layers = <1 2>;
         };
 
-        reset {
+        left_reset {
             bindings = <&rst B A>;
-            key-positions = <1 14 27 16 5 6 19 32 21 10>;
+            key-positions = <1 14 27 16 5>;
         };
     };
 
