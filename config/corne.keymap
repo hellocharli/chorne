@@ -32,22 +32,22 @@
 
         period {
             bindings = <&kp PERIOD>;
-            key-positions = <21 22>;
+            key-positions = <21 20>;
         };
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <20 21>;
+            key-positions = <21 22>;
         };
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <19 21 22>;
+            key-positions = <19 21 20>;
         };
 
         semicolon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <19 20 21>;
+            key-positions = <19 21 22>;
         };
 
         apostrophe {
