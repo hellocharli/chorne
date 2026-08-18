@@ -15,6 +15,5 @@
 include:
   - board: nice_nano@1.0.0//zmk
     shield: corne_left
-    snippet: zmk-usb-logging
   - board: nice_nano@1.0.0//zmk
     shield: corne_right
